@@ -47,8 +47,8 @@
 \def\barwidth{3}
 \def\linewidth{10}
 \def\barbreak{1}
-\def\colourying{blue}
-\def\colouryang{red}
+\def\colorying{blue}
+\def\coloryang{red}
 
 
 \def\w{\barwidth/2}
@@ -79,6 +79,17 @@
 
 \foreach \i in {4, 5, 6, 7}
 \draw [\colorying] [rotate=\i*45] [line width=\linewidth] (\r,-\b) -- (\r,\b);
+
+% yingyang fish
+
+\draw[red]   (4, 0) arc(0:360:4);
+
+\draw[green] (0, 0) arc(-90:90:2);
+\draw[green] (0, 0) arc(90:270:2);
+
+\draw[blue] (1, 2) arc(0:360:1);
+\draw[blue] (1,-2) arc(0:360:1);
+
 
 \end{tikzpicture}
 
