@@ -47,8 +47,8 @@
 \def\barwidth{3}
 \def\linewidth{10}
 \def\barbreak{1}
-\def\colorying{blue}
-\def\coloryang{red}
+\def\colorying{white}
+\def\coloryang{black}
 
 
 \def\w{\barwidth/2}
@@ -91,35 +91,43 @@
 %\draw[blue]  (1,-2) arc(0:360:1);
 
 % yingyang fish
+% these colors are for debbug purpose
+\def\green{black}
+\def\blue{black}
+\def\yellow{white}
+\def\orange{white}
+\def\red{white}
 
-\fill[green]  (0,-4) arc(-90:90:4);
-\fill[yellow] (0, 4) arc(90:270:4);
 
-\fill[blue]   (0, 0) arc(90:270:2);
-\fill[orange] (0, 0) arc(-90:90:2);
+\draw (4, 0) arc(0:360:4);
+\fill[\green]  (0,-4) arc(-90:90:4);
+\fill[\yellow] (0, 4) arc(90:270:4);
 
-\fill[blue] (0, 2) circle(1);
-\fill[red]  (0,-2) circle(1);
-    
-\node at (0, 5) {qian};
+\fill[\blue]   (0, 0) arc(90:270:2);
+\fill[\orange] (0, 0) arc(-90:90:2);
+
+\fill[\blue] (0, 2) circle(1);
+\fill[\red]  (0,-2) circle(1);
+
+%\node at (0, 5) {qian};
 
 % sqrt(2) = 1.414
 \def\r{5}
 \def\rr{\r/1.414}
 
 
-\node [rotate=6*45] at (\r, 0) {1};
-\node [rotate=7*45] at (\rr, \rr) {2};
+\node [rotate=6*45] at (\r, 0) {坎};
+\node [rotate=7*45] at (\rr, \rr) {巽};
 
-\node [rotate=0*45] at (0, \r) {3};
-\node [rotate=1*45] at (-\rr, \rr) {4};
+\node [rotate=0*45] at (0, \r) {乾};
+\node [rotate=1*45] at (-\rr, \rr) {兑};
 
 
-\node [rotate=2*45] at (-\r, 0) {5};
-\node [rotate=3*45] at (-\rr, -\rr) {6};
+\node [rotate=2*45] at (-\r, 0) {离};
+\node [rotate=3*45] at (-\rr, -\rr) {震};
 
-\node [rotate=4*45] at (0, -\r) {7};
-\node [rotate=5*45] at (\rr, -\rr) {8};
+\node [rotate=4*45] at (0, -\r) {坤};
+\node [rotate=5*45] at (\rr, -\rr) {艮};
 
 
 
