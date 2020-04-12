@@ -36,8 +36,8 @@
 %\subsection{}
 
 
-% °ËËÄ¶şÒ»Âë 0 1 2 3 4 5 6 7
-% ÏÈÌì°ËØÔÂë 2 3 7 6 5 4 0 1
+% Â°Ã‹Ã‹Ã„Â¶Ã¾Ã’Â»Ã‚Ã« 0 1 2 3 4 5 6 7
+% ÃÃˆÃŒÃ¬Â°Ã‹Ã˜Ã”Ã‚Ã« 2 3 7 6 5 4 0 1
 
 
 \begin{tikzpicture}
@@ -82,20 +82,22 @@
 
 
 \def\rad{6}
-\def\gap{0.6}
+\def\bargap{0.7}
+\def\barwidth{3}
+\def\linewidth{10}
 
-
-\def\r{\rad+\gap}
+\def\w{\barwidth/2}
+\def\r{\rad+\bargap*0}
 \foreach \i/\b in {0,2,  1,3,  2,7,  3,6,  4,5,  5,4,  6,0,  7,1}
-\draw [rotate=\i*45] [line width=12] (\r,-1) -- (\r,1);
+\draw [rotate=\i*45] [line width=\linewidth] (\r,-\w) -- (\r,\w);
 
-\def\r{\rad+\gap+\gap}
+\def\r{\rad+\bargap*1}
 \foreach \i/\b in {0,2,  1,3,  2,7,  3,6,  4,5,  5,4,  6,0,  7,1}
-\draw [rotate=\i*45] [line width=12] (\r,-1) -- (\r,1);
+\draw [rotate=\i*45] [line width=\linewidth] (\r,-\w) -- (\r,\w);
 
-\def\r{\rad+\gap+\gap+\gap}
+\def\r{\rad+\bargap*2}
 \foreach \i/\b in {0,2,  1,3,  2,7,  3,6,  4,5,  5,4,  6,0,  7,1}
-\draw [rotate=\i*45] [line width=12] (\r,-1) -- (\r,1);
+\draw [rotate=\i*45] [line width=\linewidth] (\r,-\w) -- (\r,\w);
 
 
 
