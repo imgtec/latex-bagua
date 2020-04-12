@@ -79,6 +79,26 @@
 \draw [rotate=-135] [line width=12] (5,-1) -- (5,1);
 \draw [rotate=-180] [line width=12] (5,-1) -- (5,1);
 
+
+
+\def\rad{6}
+\def\gap{0.6}
+
+
+\def\r{\rad+\gap}
+\foreach \i/\b in {0,2,  1,3,  2,7,  3,6,  4,5,  5,4,  6,0,  7,1}
+\draw [rotate=\i*45] [line width=12] (\r,-1) -- (\r,1);
+
+\def\r{\rad+\gap+\gap}
+\foreach \i/\b in {0,2,  1,3,  2,7,  3,6,  4,5,  5,4,  6,0,  7,1}
+\draw [rotate=\i*45] [line width=12] (\r,-1) -- (\r,1);
+
+\def\r{\rad+\gap+\gap+\gap}
+\foreach \i/\b in {0,2,  1,3,  2,7,  3,6,  4,5,  5,4,  6,0,  7,1}
+\draw [rotate=\i*45] [line width=12] (\r,-1) -- (\r,1);
+
+
+
 \end{tikzpicture}
 
 \end{document}
