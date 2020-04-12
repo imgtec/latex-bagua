@@ -12,7 +12,7 @@
 \usepackage{xltxtra} % Extra customizations for XeLaTeX
 \usepackage{tikz}
 
-\setmainfont{Courier New} % set the main body font (\textrm), assumes Charis SIL is installed
+\setmainfont{SourceHanSerifCN-Regular.otf} % set the main body font (\textrm), assumes Charis SIL is installed
 %\setsansfont{Deja Vu Sans}
 %\setmonofont{Deja Vu Mono}
 
@@ -23,7 +23,7 @@
 
 \usepackage{graphicx} % support the \includegraphics command and options
 
-\title{Brief Article}
+\title{先天八卦图}
 \author{The Author}
 %\date{} % Activate to display a given date or no date (if empty),
          % otherwise the current date is printed 
@@ -36,8 +36,8 @@
 %\subsection{}
 
 
-% °ËËÄ¶þÒ»Âë 0 1 2 3 4 5 6 7
-% ÏÈÌì°ËØÔÂë 2 3 7 6 5 4 0 1
+% 八四二一码 0 1 2 3 4 5 6 7
+% 先天八卦码 2 3 7 6 5 4 0 1
 
 
 \begin{tikzpicture}
@@ -102,6 +102,25 @@
 \fill[red]  (0,-2) circle(1);
     
 \node at (0, 5) {qian};
+
+% sqrt(2) = 1.414
+\def\r{5}
+\def\rr{\r/1.414}
+
+
+\node [rotate=6*45] at (\r, 0) {1};
+\node [rotate=7*45] at (\rr, \rr) {2};
+
+\node [rotate=0*45] at (0, \r) {3};
+\node [rotate=1*45] at (-\rr, \rr) {4};
+
+
+\node [rotate=2*45] at (-\r, 0) {5};
+\node [rotate=3*45] at (-\rr, -\rr) {6};
+
+\node [rotate=4*45] at (0, -\r) {7};
+\node [rotate=5*45] at (\rr, -\rr) {8};
+
 
 
 \end{tikzpicture}
